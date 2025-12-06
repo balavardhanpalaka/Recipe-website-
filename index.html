@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Indian Recipe Book</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">RecipeBook</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <div class="hero-content">
+            <h1>Culinary Treasures of India</h1>
+            <p>Traditional nutritional recipes developed by Indian Academic Institutions.</p>
+            <a href="#recipes" class="btn">Explore Recipes</a>
+        </div>
+    </header>
+
+    <section id="recipes" class="container">
+        <div class="section-title">
+            <h2>Featured Recipes</h2>
+            <p>Discover healthy and delicious treats from our collection.</p>
+        </div>
+        
+        <div class="recipe-grid" id="recipe-container">
+            </div>
+    </section>
+
+    <div id="recipe-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-img" src="" alt="Recipe Image">
+                </div>
+                <div class="modal-text">
+                    <h2 id="modal-title">Recipe Title</h2>
+                    <p class="recipe-category" id="modal-category">Category</p>
+                    
+                    <h3>Ingredients</h3>
+                    <ul id="modal-ingredients"></ul>
+
+                    <h3>Method of Preparation</h3>
+                    <p id="modal-method"></p>
+
+                    <div class="nutritional-info">
+                        <h3>Nutritional Info (per 100g)</h3>
+                        <p id="modal-nutrition"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Indian Recipe Book Project. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
